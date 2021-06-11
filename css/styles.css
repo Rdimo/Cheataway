@@ -10195,7 +10195,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(255, 68, 0, 0.3) 0%, rgba(238, 255, 0, 0) 75%, #4c00ff00 100%), url("/assets/img/Backround.jpg");
+  background: linear-gradient(to bottom, rgba(255, 68, 0, 0.3) 0%, rgba(238, 255, 0, 0) 75%, #4c00ff00 100%), url("../assets/img/Backround.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
