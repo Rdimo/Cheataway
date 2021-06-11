@@ -10191,7 +10191,7 @@ body {
 
 .masthead {
   position: relative;
-  width: 100%;
+  width: auto;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
@@ -10274,7 +10274,7 @@ body {
     width: 30%;
   }
 }
-masthead
+
 .contact-section {
   padding-top: 5rem;
 }
