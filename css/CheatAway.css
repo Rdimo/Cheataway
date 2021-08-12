@@ -8,8 +8,8 @@
     height: 50px;
     border: none;
     outline: none;
-    color: #fff;
-    background: #FF2200;
+    color: rgb(255, 255, 255);
+    background: #0000009c;
     cursor: pointer;
     position: relative;
     z-index: 0;
