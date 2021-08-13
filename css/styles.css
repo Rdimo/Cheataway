@@ -10401,3 +10401,16 @@ input:checked + .slider:before {
   text-indent: 12em;
   font-size: 18px; 
 }
+.bar-wrapper {
+  height: 300px;
+  position: relative;
+}
+.bar {
+  position: relative;
+  bottom: 0;
+  width: 5px;
+  display: inline-block;
+  border: 1px solid rgb(109, 89, 89);
+  height: 5px;
+  border-bottom: 3px solid #fff;
+}

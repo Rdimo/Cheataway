@@ -1,9 +1,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="author" content="" /> -->
     <title>CheatAway</title>
     <link rel="icon" type="image/x-icon" href="assets/img/Cheataway.ico" />
     <script src="https://kit.fontawesome.com/c6b61f351e.js" crossorigin="anonymous"></script>
@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="css/CheatAway.css" />
 </head>
 <body>
+    <!-- <canvas id='canvas' width="800" height="350"></canvas>
+    <br>
+    <br>
+    <script src="scripts/visualizer.js"></script> -->
             <!--Main-->
             <header class="masthead" id="particle-js">
                 <div class="container d-flex h-100 align-items-center">
@@ -20,21 +24,19 @@
                         <h1 class="mx-auto my-0 text-uppercase">CheatAway</h1>
                         <a href="https://discord.gg/PyNsVnAYgP" target="_blank"><button class="fox-button">Join Discord</button></a>
                         <a href="https://www.paypal.com/donate?hosted_button_id=VJV78NRMN6BB2" target="_blank"><button class="fox-button">Donate</button></a>
-                        <!-- <script type="text/javascript" src="Backround/particles.js"></script> -->
-                        <!-- <script type="text/javascript" src="Backround/app.js"></script> -->
                         <div>
                             <p id="button-text" class="switch small text-center text-white-50" style="margin-left: 1px; margin-top: 40px;">Click me</p>
                             <label class="switch">
                              <input type="checkbox">
                              <span class="slider round"></span>
-                             <audio id="myaudio"> <source src="assets/sound/HOME - Resonance.mp3" type="audio/mp3"> </audio>
+                             <audio id="MyAudio"> <source src="assets/sound/HOME - Resonance.mp3" type="audio/mp3"> </audio>
                              </label>
                        </div>
                      </div>
                      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
                      <script>
                          $(document).ready (function(){
-                             var myAudio = document.getElementById("myaudio");
+                             var myAudio = document.getElementById("MyAudio");
                              var more = 0;
                              $('.round').click (function(){
                                  if(more %2 ==0){
@@ -47,14 +49,13 @@
                                  }
                              });
                          });
-                     </script>
+                        </script>
                     </div>
                 </div>
             </header>
-<!-- <p id="particle-js" class="contact-section bg-black"> -->
     <section class="contact-section bg-black" id="contact">
-        <script type="text/javascript" src="Backround/particles.js"></script>
-        <script type="text/javascript" src="Backround/app.js"></script>
+        <script type="text/javascript" src="scripts/particles.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
         <div class="container" style="margin-right: 190px;">
             <div class="row">
                 <div class="col-md-4 mb-3 mb-md-0">
@@ -90,6 +91,12 @@
         </div> -->
     <footer class="footer bg-black small text-center text-white-50"><div class="container">By Rdimo</div></footer>
     </section>
-<!-- </p> -->
 </body>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-199338390-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-199338390-1');
+</script>
 </html>
