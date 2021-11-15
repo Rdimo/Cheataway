@@ -39,6 +39,7 @@
 
 html {
   font-family: sans-serif;
+  scroll-behavior: smooth;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

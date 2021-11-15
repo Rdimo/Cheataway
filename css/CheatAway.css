@@ -1,9 +1,9 @@
-.fox-text-orange-50 {
+.ca-text-orange-50 {
     color: rgb(255, 140, 0) !important;
     size: 10px;
   }
   
-  .fox-button {
+.ca-button {
     width: 130px;
     height: 50px;
     border: none;
@@ -12,11 +12,13 @@
     background: #0000009c;
     cursor: pointer;
     position: relative;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in-out;
     z-index: 0;
     border-radius: 10px;
 }
 
-.fox-button:before {
+.ca-button:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -33,19 +35,23 @@
     border-radius: 10px;
 }
 
-.fox-button:active {
+.ca-button:hover {
+    transform: rotate(2deg);
+}
+
+.ca-button:active {
     color: #000
 }
 
-.fox-button:active:after {
+.ca-button:active:after {
     background: transparent;
 }
 
-.fox-button:hover:before {
+.ca-button:hover:before {
     opacity: 1;
 }
 
-.fox-button:after {
+.ca-button:after {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -68,7 +74,7 @@
     100% { background-position: 0 0; }
 }
 
-.fox-topics {
+.ca-topics {
     font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 2.5rem;
     line-height: 2.5rem;
@@ -79,19 +85,19 @@
     background-clip: text;
 }
 
-  .fox-about-section {
+  .ca-about-section {
   padding-top: 1rem;
   background: #0C0C17;
 }
 
-.fox-bg-dark {
+.ca-bg-dark {
     background-color: #ffffff !important;
     background: linear-gradient(#ff7700cb,rgb(0, 0, 0) ) !important;
 }
   
-  a.fox-bg-dark:hover, a.fox-bg-dark:focus,
-  button.fox-bg-dark:hover,
-  button.fox-bg-dark:focus {
+  a.ca-bg-dark:hover, a.ca-bg-dark:focus,
+  button.ca-bg-dark:hover,
+  button.ca-bg-dark:focus {
     background-color: #ffffff !important;
     background: #0C0C17 !important;
 }
