@@ -207,7 +207,6 @@ var el = document.querySelector('.glitch-text');
 var fx = new TextScramble(el);
 
 var counter = 0;
-
 var min = 1000, max = 5000;
 var rand = Math.random() * (max - min) + min;
 
