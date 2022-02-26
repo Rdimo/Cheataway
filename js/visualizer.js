@@ -1,7 +1,3 @@
-window.onload = function() {
-    new Visualizer().ini();
-};
-
 var Visualizer = function() {
     this.audioContext = null;
     this.source = null;
@@ -31,21 +27,24 @@ Visualizer.prototype = {
     _visualize: function() {
         var myAudio = document.getElementById("Audio");
         var audioContext = this.audioContext
-        var analyser = audioContext.createAnalyser();
-        var audioSrc = audioContext.createMediaElementSource(myAudio);
-        var audioBufferSouceNode = audioContext.createBufferSource(),
-        that = this;
-        audioSrc.connect(analyser);
-        analyser.connect(audioContext.destination);
-        if (this.animationId !== null) {
-            cancelAnimationFrame(this.animationId);
-        }
-        audioBufferSouceNode.start(0);
-        this.status = 1;
-        audioBufferSouceNode.onended = function() {
-            that._audioEnd();
-        };
-        this._drawSpectrum(analyser);
+        try {
+            var analyser = audioContext.createAnalyser();
+            var audioSrc = audioContext.createMediaElementSource(myAudio);  
+            var audioBufferSouceNode = audioContext.createBufferSource(),
+            that = this;
+            audioSrc.connect(analyser);  
+
+            analyser.connect(audioContext.destination);
+            if (this.animationId !== null) {
+                cancelAnimationFrame(this.animationId);
+            }
+            audioBufferSouceNode.start(0);
+            this.status = 1;
+            audioBufferSouceNode.onended = function() {
+                that._audioEnd();
+            };
+            this._drawSpectrum(analyser);
+        } catch (TypeError) {}
     },
     
     _drawSpectrum: function(analyser) {
