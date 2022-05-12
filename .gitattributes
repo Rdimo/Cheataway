@@ -1,0 +1,4 @@
+* text=auto
+* eol=lf
+*.html linguist-generated
+*.md linguist-generated

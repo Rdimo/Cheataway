@@ -1,0 +1,357 @@
+@media only screen and (max-width: 1440px) {
+  .innerHeader {
+    width: 80%;
+  }
+  .preview .innerPreview {
+    width: 80%;
+  }
+  .main .innerMain {
+    width: 80%;
+  }
+  .contactBlock {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .innerHeader {
+    width: 90%;
+  }
+  .preview .innerPreview {
+    width: 90%;
+  }
+  .main .innerMain {
+    width: 90%;
+  }
+  .projCard {
+    width: 210px;
+    span {
+      font-size: 17px;
+    }
+  }
+  .contactBlock {
+    width: 95%;
+  }
+  .contactCard {
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .innerHeader {
+    width: 95%;
+  }
+  .preview .innerPreview {
+    width: 95%;
+  }
+  .main .innerMain {
+    width: 95%;
+    margin-top: 40px;
+  }
+  .contactBlock {
+    width: 95%;
+    margin-top: 40px;
+  }
+  .contactGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      '. . .'
+      '. . .'
+      '. . .'
+      '. . .';
+  }
+  .contactCard {
+    width: 240px;
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    height: 120px;
+    .innerHeader {
+      .logo img {
+        width: 50px;
+        height: 50px;
+      }
+      nav {
+        a {
+          padding: 13px 50px;
+          margin-left: 3%;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  .innerHeader {
+    width: 95%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .preview {
+    .innerPreview {
+      width: 75%;
+      label {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .main {
+    .innerMain {
+      width: 75%;
+      flex-direction: column;
+      margin-top: 40px;
+      &#projects {
+        width: 75%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin-top: 40px;
+      }
+      .info {
+        width: 100%;
+        h1 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .stats {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        .skills {
+          width: 500px;
+        }
+        .statHead label {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  .projBlock {
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 40px;
+  }
+  .projCard {
+    width: 180px;
+  }
+  .contactGrid {
+    @include flex-center;
+    flex-direction: column;
+  }
+  .contactCard {
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactCard.invisible {
+    display: none;
+  }
+}
+
+/* Landscape phones and smaller */
+@media only screen and (max-width: 480px) {
+  .header .innerHeader nav a {
+    padding: 13px 20px;
+    margin-left: 5%;
+  }
+  .preview .innerPreview {
+    width: 85%;
+    label {
+      font-size: 25px;
+    }
+  }
+  .main .innerMain {
+    width: 85%;
+    &#projects {
+      width: 85%;
+    }
+  }
+  #myProjectsContent {
+    font-size: 14px;
+  }
+  .projLine {
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    padding-top: 0;
+  }
+  .projCard {
+    width: 85%;
+    height: 100px;
+    justify-content: center;
+    margin-top: 10px;
+    span {
+      font-size: 20px;
+    }
+  }
+  .projCardImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .projActiveDescription span {
+    font-size: 18px;
+    text-align: center;
+  }
+  .projActiveButtons {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    a {
+      justify-content: center;
+    }
+  }
+  .backButton {
+    width: 50%;
+    height: 50px;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  .linkTo {
+    width: 50%;
+    height: 50px;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+}
+
+/* Much smaller */
+@media only screen and (max-width: 320px) {
+  .header {
+    height: 110px;
+    .innerHeader {
+      .logo {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+        label {
+          font-size: 14px;
+        }
+      }
+      nav {
+        a {
+          padding: 13px 16px;
+          margin-left: 10px;
+        }
+        span {
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .preview {
+    .innerPreview {
+      width: 85%;
+      label {
+        font-size: 25px;
+        line-height: 40px;
+      }
+      svg {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+  .main {
+    .innerMain {
+      width: 85%;
+      &#projects {
+        width: 85%;
+      }
+      .info {
+        h1 {
+          font-size: 15px;
+          line-height: 20px;
+        }
+        p {
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+      .stats {
+        .statHead label {
+          font-size: 14px;
+          line-height: 18px;
+        }
+        .statContent {
+          .statElement {
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+            span {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .projHead label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  #myProjectsContent {
+    font-size: 12px;
+  }
+  .projCard {
+    width: 75%;
+    height: 60px;
+    span {
+      font-size: 15px;
+    }
+  }
+  .projCardImage {
+    width: 40px;
+    height: 40px;
+  }
+  .projActiveDescription {
+    img {
+      width: 90%;
+    }
+    span {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+  .backButton {
+    width: 40%;
+    height: 40px;
+    font-size: 15px;
+  }
+  .linkTo {
+    width: 40%;
+    height: 40px;
+    font-size: 12px;
+    img {
+      width: 20px;
+    }
+  }
+  .contactCard {
+    width: 70%;
+    height: 70px;
+    span {
+      font-size: 16px;
+    }
+  }
+  .copyright {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    span {
+      font-size: 10px;
+    }
+  }
+}

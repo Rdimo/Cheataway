@@ -1,0 +1,169 @@
+@use './index' as *;
+
+// .projScreenSwitchOut {
+//   animation: projScreenSwitchOut 0.3s ease;
+//   @keyframes projScreenSwitchOut {
+//     0% {
+//       opacity: 1;
+//       transform: translateX(0);
+//     }
+//     40% {
+//       opacity: 0;
+//     }
+//     100% {
+//       opacity: 0;
+//       transform: translateX(-100%);
+//     }
+//   }
+// }
+// .projScreenSwitchIn {
+//   animation: projScreenSwitchIn 0.3s ease;
+//   @keyframes projScreenSwitchIn {
+//     0% {
+//       opacity: 0;
+//       transform: translateX(100%);
+//     }
+//     40% {
+//       opacity: 1;
+//     }
+//     70% {
+//       transform: translateX(-5%);
+//     }
+//     100% {
+//       opacity: 1;
+//       transform: translateX(0);
+//     }
+//   }
+// }
+
+.showIn {
+  animation: 0.5s showIn ease forwards;
+  @keyframes showIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.showOut {
+  animation: showOut 0.5s ease forwards;
+  @keyframes showOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+.listPopIn {
+  opacity: 0;
+  animation: 0.5s listPopIn ease forwards;
+  animation-delay: calc(var(--order) * 50ms);
+  @keyframes listPopIn {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+      transform: translateY(40%);
+    }
+    70% {
+      opacity: 0.2;
+      transform: translateY(-10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.listPopOut {
+  opacity: 1;
+  animation: listPopOut 0.5s ease forwards;
+  animation-delay: calc(var(--order) * 50ms);
+  @keyframes listPopOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    20% {
+      opacity: 0.6;
+      transform: translateY(0%);
+    }
+    70% {
+      opacity: 0.2;
+      transform: translateY(-10%);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+  }
+}
+
+.listElementPopIn {
+  opacity: 0;
+  animation: listElementPopIn 0.4s ease forwards;
+  animation-delay: calc(var(--order) * 40ms);
+  @keyframes listElementPopIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-200%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.PopIn {
+  opacity: 0;
+  background: $main;
+  animation: PopIn 0.4s ease forwards;
+  animation-delay: calc(var(--order) * 40ms);
+  @keyframes PopIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+      background: $main;
+    }
+    60% {
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      background: $dark-7;
+    }
+  }
+}
+
+.PopOut {
+  opacity: 1;
+  background: $dark-7;
+  animation: PopOut 0.3s ease forwards;
+  animation-delay: calc(var(--order) * 30ms);
+  @keyframes PopOut {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+      background: $dark-7;
+    }
+    40% {
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.5);
+      background: $main;
+    }
+  }
+}
