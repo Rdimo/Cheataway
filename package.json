@@ -9,6 +9,7 @@
     "start": "npm run dev",
     "dev": "vite --port 8888 --open",
     "preview": "vite preview --open",
+    "deploy": "npm run build & firebase deploy",
     "build": "vite build",
     "lint": "eslint . --ext js,ts,tsx"
   },
